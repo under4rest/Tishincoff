@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+.overalContainer{
+  background-color: black;
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

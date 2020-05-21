@@ -1,5 +1,4 @@
 .header {
-  background-color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,6 +6,7 @@
   align-self: center;
 }
 .header .menu {
+  justify-content: flex-end;
   display: flex;
 }
 .header .menu ul {
@@ -16,6 +16,6 @@
 .header .menu .menu_item{
   display: inline-block;
   margin: auto 15px;
-  color: black;
+  color: white;
 
 }
