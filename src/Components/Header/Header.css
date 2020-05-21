@@ -1,0 +1,21 @@
+.header {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-self: center;
+}
+.header .menu {
+  display: flex;
+}
+.header .menu ul {
+  list-style-type: none;
+  margin: auto;
+}
+.header .menu .menu_item{
+  display: inline-block;
+  margin: auto 15px;
+  color: black;
+
+}
