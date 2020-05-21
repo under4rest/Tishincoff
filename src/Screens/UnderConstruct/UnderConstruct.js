@@ -1,6 +1,6 @@
 import React from "react";
 import './master.css'
-import Logo from '../../LOGO_tis.png';
+import Logo from './img/LOGO_tis.png';
 
 class UnderConstruct extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class UnderConstruct extends React.Component {
       <>
       <div className="holder">
         <h1 className="under_construction">UNDER CONSTRUCTION</h1>
-        <img scr={`${Logo}`} alt="logo"/>
+        <img src={Logo} alt='website logo' />
       </div>
       </>
     )

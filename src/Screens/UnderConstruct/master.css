@@ -4,7 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .under_construction{
-  font-size: 72;
+  font-size: 6em;
+  margin-bottom: 15px;
 }
