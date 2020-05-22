@@ -1,21 +1,45 @@
 .header {
+  background-color: rgba(0,0,0,0);
+  position: absolute!important;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0px 20px;
   align-self: center;
+  padding-top: 60px!important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Gilroy-Bold';
+}
+.logo{
+  margin-left: 50px;
 }
 .header .menu {
-  justify-content: flex-end;
-  display: flex;
-}
-.header .menu ul {
-  list-style-type: none;
-  margin: auto;
+  margin-right: 50px;
 }
 .header .menu .menu_item{
   display: inline-block;
-  margin: auto 15px;
+  margin: 0 15px;
   color: white;
-
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Gilroy-Bold';
+}
+.navbar-collapse {
+  background-color: rgba(0, 0,0, 0.4);
+  padding: 10px;
+  border-radius: 0 0 30px 30px ;
+}
+@media (max-width: 768px) {
+  .menu_item{
+    margin: 0 10px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .logo {
+    margin: 0;
+    width: 200px;
+  }
 }

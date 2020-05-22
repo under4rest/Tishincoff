@@ -1,0 +1,77 @@
+.holder-main{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(./ColorGradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 110px;
+}
+.column-left{
+  display: flex;
+  flex:2;
+  align-items: center;
+  justify-content: flex-start;
+}
+.column-right{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex:1
+}
+.main-text {
+  font-size: 96px;
+  line-height: 120px;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Gilroy-Bold';
+}
+.main-button {
+  background-color: rgb(217, 12, 66);
+  padding: 20px 80px;
+  border-radius: 50px;
+  font-size: 24px;
+  box-shadow: 120px rgb(217, 12, 66);
+}
+@media (max-width: 1024px) {
+.main-text {
+  font-size: 62px;
+  line-height: 80px;
+}
+.holder-main{
+  flex-direction: column;
+}
+.column-left{
+  justify-content: center;
+  text-align: center;
+}
+.main-button{
+  background-color: black;
+  box-shadow: 0 0 120px black;
+}
+}
+@media (max-width: 600px) {
+  .main-text {
+  font-size: 48px;
+  line-height: 60px;
+}
+.holder-main{
+  padding-left: 0;
+  padding-right: 0;
+}
+.column-left{
+  text-align: left;
+  flex: 1,
+}
+.column-right {
+  align-items: flex-start;
+}
+.main-button{
+  font-size: 18px;
+  padding: 10px 40px;
+}
+}

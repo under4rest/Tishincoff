@@ -1,12 +1,53 @@
-.holder{
-  width: 100vw;
-  height: 100vh;
+.holder {
+  padding-top: 160px;
+  width: 100%;
+  height: 180vh;
   display: flex;
-  justify-content: center;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Gilroy-Bold';
 }
-.under_construction{
+.under_construction {
   font-size: 6em;
   margin-bottom: 15px;
+  z-index: 3;
+}
+.under_construction_h6 {
+  font-size: 1em;
+  z-index: 4;
+  opacity: 0.4;
+  margin-top: 30px;
+}
+.cup {
+  position: relative;
+  height: 800px;
+  top: -200px;
+  z-index: 0; 
+}
+
+@media (max-width: 1024px) {
+  .under_construction {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .under_construction {
+    font-size: 4em;
+  }
+  .cup {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width:425px) {
+  .under_construction {
+    font-size: 2em;
+  }
+  .under_construction_h6 {
+    font-size: 0.5em;
+  }
+  .cup {
+    top: -120px
+  }
 }
