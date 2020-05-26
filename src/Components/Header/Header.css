@@ -26,11 +26,11 @@
   text-transform: uppercase;
   font-family: 'Gilroy-Bold';
 }
-.navbar-collapse {
+/*.navbar-collapse.show {
   background-color: rgba(0, 0,0, 0.4);
   padding: 10px;
   border-radius: 0 0 30px 30px ;
-}
+}*/
 @media (max-width: 768px) {
   .menu_item{
     margin: 0 10px;
