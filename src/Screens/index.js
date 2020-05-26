@@ -15,7 +15,7 @@ class Screen extends React.Component {
               <MainScreen />
             </Route>
             <Route path="/menu">
-              <UnderConstruct data={this.props.data} addToCart={this.props.addToCart}/>
+              <UnderConstruct data={this.props.data}/>
             </Route>
             <Route path="/shops">
               <UnderConstruct />

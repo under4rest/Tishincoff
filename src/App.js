@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App(props) {
   return (
-    <Screen className="overalContainer" data={props.state} addToCart={props.addToCart}/>
+    <Screen className="overalContainer" data={props.state}/>
   );
 }
 

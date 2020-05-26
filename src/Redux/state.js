@@ -16,24 +16,37 @@ let state ={
     good_description: 'Тестовое описание кофе'
   },
   ],
-  cart: []
-
-}
-
-export const addToCart = (e) => {
-  let exist = null
-  let f ={
-    good_id: e.good_id,
-    good_name: e.good_name,
-    good_count: 1,
-  }
-  state.cart.forEach((item, index) => {
-    if (item.good_id === e.good_id) {
-      exist = index
-      console.warn(exist, index);
+  cart: [],
+  functions: {
+    delToCart: (e) => {
+      let exist = null
+      state.cart.forEach((item, index) => {
+        if (item.good_id === e.good_id) {
+          exist = index
+          console.warn(exist, index);
+        }
+      })
+      if (exist != null) {state.cart.splice(exist,1) }
+      console.warn('нажал на кнопку удаления из корзины', state.cart);
+    },
+    addToCart: (e) => {
+      let exist = null
+      let f ={
+        good_id: e.good_id,
+        good_name: e.good_name,
+        good_count: 1,
+      }
+      state.cart.forEach((item, index) => {
+        if (item.good_id === e.good_id) {
+          exist = index
+          console.warn(exist, index);
+        }
+      })
+      if (exist != null) {state.cart[exist].good_count++ } else { state.cart.push(f) }
+      console.warn('нажал на кнопку довления в корзину', state.cart);
     }
-  })
-  if (exist != null) {state.cart[exist].good_count++ } else { state.cart.push(f) }
-  console.warn('нажал на кнопку довления в корзину', state.cart);
+  }
+
 }
+
 export default state
