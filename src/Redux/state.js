@@ -21,13 +21,19 @@ let state ={
 }
 
 export const addToCart = (e) => {
-  
+  let exist = null
   let f ={
     good_id: e.good_id,
     good_name: e.good_name,
-    good_count: !state.cart[e.good_id] ?  1 : state.cart[e.good_id].good_count++,   
+    good_count: 1,
   }
-  state.cart.push(f)
+  state.cart.forEach((item, index) => {
+    if (item.good_id === e.good_id) {
+      exist = index
+      console.warn(exist, index);
+    }
+  })
+  if (exist != null) {state.cart[exist].good_count++ } else { state.cart.push(f) }
   console.warn('нажал на кнопку довления в корзину', state.cart);
 }
 export default state

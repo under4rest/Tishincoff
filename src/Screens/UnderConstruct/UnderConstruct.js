@@ -13,6 +13,7 @@ class UnderConstruct extends React.Component {
           <h1 className="under_construction">Готовим блокбастер</h1>
           <img src={Cup} alt='website logo' className="cup" />
           <div className="main-button" onClick={() => this.props.addToCart(this.props.data.coffee[0])}>хочу попробовать</div>
+          <div className="main-button" onClick={() => this.props.addToCart(this.props.data.coffee[1])}>хочу попробовать</div>
         </div>
       </>
     )
