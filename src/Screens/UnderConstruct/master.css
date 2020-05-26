@@ -6,7 +6,7 @@
   overflow: hidden;
   align-items: center;
   flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, 'Gilroy-Bold';
+  font-family:   'Gilroy-Bold';
 }
 .under_construction {
   font-size: 6em;

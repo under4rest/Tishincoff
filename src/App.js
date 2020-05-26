@@ -4,9 +4,9 @@ import Screen from './Screens/index.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-function App() {
+function App(props) {
   return (
-    <Screen className="overalContainer" />
+    <Screen className="overalContainer" data={props.state} addToCart={props.addToCart}/>
   );
 }
 

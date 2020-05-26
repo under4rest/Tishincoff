@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import state from './Redux/state'
+import {addToCart} from './Redux/state'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App state={state} addToCart={addToCart}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

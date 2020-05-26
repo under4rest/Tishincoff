@@ -13,13 +13,13 @@ class Header extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto menu">
-              <Nav><NavLink to="/menu" activeClassName="selected" className="menu_item" > Меню </NavLink></Nav>
-              <Nav><NavLink to="/shops" activeClassName="selected" className="menu_item" > Магазин </NavLink></Nav>
-              <Nav><NavLink to="/coffee" activeClassName="selected" className="menu_item" > Кофе </NavLink></Nav>
-              <Nav><NavLink to="/tea" activeClassName="selected" className="menu_item" > Чай </NavLink></Nav>
-              <Nav><NavLink to="/staff" activeClassName="selected" className="menu_item" > Оборудование </NavLink></Nav>
-              <Nav><NavLink to="/about" activeClassName="selected" className="menu_item" > О нас </NavLink></Nav>
-              <Nav><NavLink to="/contact" activeClassName="selected" className="menu_item" > Контакты </NavLink></Nav>
+              <Nav><NavLink to="menu" activeClassName="selected" className="menu_item" > Меню </NavLink></Nav>
+              <Nav><NavLink to="shops" activeClassName="selected" className="menu_item" > Магазин </NavLink></Nav>
+              <Nav><NavLink to="coffee" activeClassName="selected" className="menu_item" > Кофе </NavLink></Nav>
+              <Nav><NavLink to="tea" activeClassName="selected" className="menu_item" > Чай </NavLink></Nav>
+              <Nav><NavLink to="staff" activeClassName="selected" className="menu_item" > Оборудование </NavLink></Nav>
+              <Nav><NavLink to="about" activeClassName="selected" className="menu_item" > О нас </NavLink></Nav>
+              <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" > Контакты </NavLink></Nav>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

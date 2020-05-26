@@ -11,19 +11,13 @@ class Screen extends React.Component {
         <div className="overalContainer">
           <Header />
           <Switch>
+            <Route exact path="/">
+              <MainScreen />
+            </Route>
             <Route path="/menu">
-              <UnderConstruct />
+              <UnderConstruct data={this.props.data} addToCart={this.props.addToCart}/>
             </Route>
             <Route path="/shops">
-              <UnderConstruct />
-            </Route>
-            <Route path="/coffee">
-              <UnderConstruct />
-            </Route>
-            <Route path="/tea">
-              <UnderConstruct />
-            </Route>
-            <Route path="/staff">
               <UnderConstruct />
             </Route>
             <Route path="/about">
@@ -31,9 +25,6 @@ class Screen extends React.Component {
             </Route>
             <Route path="/contact">
               <UnderConstruct />
-            </Route>
-            <Route path="/">
-              <MainScreen />
             </Route>
             <Route path="*">
               <h1>Doesn`t exist</h1>
