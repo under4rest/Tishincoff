@@ -3,6 +3,7 @@ import Header from "./../Components/Header/Header";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
 import MainScreen from './MainScreen/MainScreen'
+import CarouselScreen from "./CarouselScreen/CarousleScreen";
 
 class Screen extends React.Component {
   render() {
