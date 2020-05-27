@@ -10,11 +10,14 @@ import { createStore, bindActionCreators } from 'redux';
 import initState from './initialState'
 
 const ACTION_ADD_TO_CART = 'ACTION_ADD_TO_CART'
+const ACTION_DEL_FROM_CART = 'ACTION_DEL_FROM_CART'
 
 const rootReducer = (state = initState, action) => {
   switch (action.type) {
     case ACTION_ADD_TO_CART:
       return { ...state, cart: [...state.cart, action.payload] }
+    case ACTION_DEL_FROM_CART:
+      return { ...state, cart: state.cart.filter(x => x.good_id != action.payload) }
   }
   return state
 }
