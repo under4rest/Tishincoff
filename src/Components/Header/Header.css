@@ -1,6 +1,5 @@
 .header {
   background-color: rgba(0,0,0,0);
-  position: absolute!important;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,13 +25,22 @@
   text-transform: uppercase;
   font-family: 'Gilroy-Bold';
 }
-/*.navbar-collapse.show {
+.toggle{
+  background-color: rgba(0,0,0,0);
   background-color: rgba(0, 0,0, 0.4);
   padding: 10px;
   border-radius: 0 0 30px 30px ;
+}
+.toggle-menu{
+  padding-top: 30px;
+}
+/*.navbar-collapse.show {
 }*/
+@media (max-width: 1200px) {
+  .header{ background-color: rgba(0, 0,0, 0.4);  padding: 30px!important;}
+}
 @media (max-width: 768px) {
-  .menu_item{
+  .header .menu .menu_item{
     margin: 0 10px;
     font-size: 18px;
   }
@@ -40,6 +48,6 @@
 @media (max-width: 420px) {
   .logo {
     margin: 0;
-    width: 200px;
+    width: 150px;
   }
 }

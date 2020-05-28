@@ -23,11 +23,9 @@ let state ={
       state.cart.forEach((item, index) => {
         if (item.good_id === e.good_id) {
           exist = index
-          console.warn(exist, index);
         }
       })
       if (exist != null) {state.cart.splice(exist,1) }
-      console.warn('нажал на кнопку удаления из корзины', state.cart);
     },
     addToCart: (e) => {
       let exist = null
@@ -39,11 +37,9 @@ let state ={
       state.cart.forEach((item, index) => {
         if (item.good_id === e.good_id) {
           exist = index
-          console.warn(exist, index);
         }
       })
       if (exist != null) {state.cart[exist].good_count++ } else { state.cart.push(f) }
-      console.warn('нажал на кнопку довления в корзину', state.cart);
     }
   }
 

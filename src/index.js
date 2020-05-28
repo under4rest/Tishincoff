@@ -6,7 +6,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import state from './Redux/state';
 import { Provider } from 'react-redux'
-import { createStore, bindActionCreators } from 'redux';
+import { createStore } from 'redux';
 import initState from './initialState'
 
 const ACTION_ADD_TO_CART = 'ACTION_ADD_TO_CART'
@@ -17,7 +17,7 @@ const rootReducer = (state = initState, action) => {
     case ACTION_ADD_TO_CART:
       return { ...state, cart: [...state.cart, action.payload] }
     case ACTION_DEL_FROM_CART:
-      return { ...state, cart: state.cart.filter(x => x.good_id != action.payload) }
+      return { ...state, cart: state.cart.filter(x => x.good_id !== action.payload) }
   }
   return state
 }

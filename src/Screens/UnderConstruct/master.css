@@ -1,7 +1,7 @@
 .holder {
   padding-top: 160px;
   width: 100%;
-  height: 180vh;
+  min-height: 180vh;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -17,7 +17,7 @@
   font-size: 1em;
   z-index: 4;
   opacity: 0.4;
-  margin-top: 30px;
+  margin: 30px 15px;
 }
 .cup {
   position: relative;
@@ -25,7 +25,22 @@
   top: -200px;
   z-index: 0; 
 }
-
+.product_img{
+  width: 100px;
+  height: 100px;
+}
+.product_item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.product_button_holer {
+  margin-right: 40px;
+  margin-left: auto;
+}
+.product_button {
+  min-width: 140px;
+}
 @media (max-width: 1024px) {
   .under_construction {
     text-align: center;
@@ -46,6 +61,7 @@
   }
   .under_construction_h6 {
     font-size: 0.5em;
+    text-align: center;
   }
   .cup {
     top: -120px

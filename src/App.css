@@ -26,9 +26,45 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.product_item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.product_button_holder {
+  margin-right: 40px;
+  margin-left: auto;
+}
 .App-link {
   color: #61dafb;
+}
+@media (max-width: 500px) {
+  .product_item h3{
+    margin-top: 0;
+    font-size: 18px;
+  }
+  .holder h3 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .product_item p {
+    font-size: 12px;
+  }
+  .product_item img{
+    width: 55px;
+    height: 55px;
+  }
+  .product_item {
+    margin: 10px 0;
+  }
+  .product_button_holder{
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .product_button_holder button{
+    min-width: 70px;
+    font-size: 10px;
+  }
 }
 
 @keyframes App-logo-spin {

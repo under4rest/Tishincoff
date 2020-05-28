@@ -3,7 +3,7 @@ import Header from "./../Components/Header/Header";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
 import MainScreen from './MainScreen/MainScreen'
-import CarouselScreen from "./CarouselScreen/CarousleScreen";
+import ProductList from "./ProductListScreen/ProductList";
 
 class Screen extends React.Component {
   render() {
@@ -16,10 +16,10 @@ class Screen extends React.Component {
               <MainScreen />
             </Route>
             <Route path="/menu">
-              <UnderConstruct data={this.props.data}/>
+              <UnderConstruct />
             </Route>
             <Route path="/shops">
-              <UnderConstruct />
+              <ProductList />
             </Route>
             <Route path="/about">
               <UnderConstruct />
@@ -28,8 +28,7 @@ class Screen extends React.Component {
               <UnderConstruct />
             </Route>
             <Route path="*">
-              <h1>Doesn`t exist</h1>
-              <h1> 404 not found</h1>
+              <UnderConstruct />
             </Route>
           </Switch>
         </div>
