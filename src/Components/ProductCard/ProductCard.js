@@ -19,6 +19,9 @@ export default class ProductCard extends React.Component {
     delFromCart(id);
     this.setState({exist: false})
   }
+  componentDidMount() {
+    this.exist(this.props.element)
+  }
   componentDidUpdate(prevProps) {
     if (prevProps.cart !== this.props.cart) {
       this.exist(this.props.element)
