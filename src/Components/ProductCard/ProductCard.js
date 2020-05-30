@@ -11,13 +11,13 @@ export default class ProductCard extends React.Component {
   exist(element) {
     const { cart } = this.props
     cart.forEach(item => {
-       if (item.good_id === element.good_id) {this.setState({exist: true})} 
+      if (item.good_id === element.good_id) { this.setState({ exist: true }) }
     })
   }
   del(id) {
     const { delFromCart } = this.props
     delFromCart(id);
-    this.setState({exist: false})
+    this.setState({ exist: false })
   }
   componentDidMount() {
     this.exist(this.props.element)
@@ -30,20 +30,24 @@ export default class ProductCard extends React.Component {
 
   render() {
     const { element, addToCart } = this.props
-    
+
     return (
       <div className="product_item">
         <div className="product_img_holder">
           <img src={Cup} alt='website logo' className="product_img" />
         </div>
-        <div className="product_text">
-          <h3>{element.good_name}</h3>
-          <p>{element.good_description}</p>
-        </div>
-        <div className="product_button_holder">
+        <div className="product_description">
+          <div className="product_text">
+            <h3>{element.good_name}</h3>
+            <p>{element.good_param}</p>
+            <p>{element.good_second_param}</p>
+            <p>{element.good_description}</p>
+          </div>
+          <div className="product_button_holder">
 
-          {!this.state.exist ? <Button variant="light" className="product_button" onClick={() => addToCart(element)}>хочу добавить</Button> : <Button variant="light" className="product_button" onClick={() => this.del(element.good_id)}>хочу удалить</Button>}
+            {!this.state.exist ? <Button variant="light" className="product_button" onClick={() => addToCart(element)}>хочу добавить</Button> : <Button variant="light" className="product_button" onClick={() => this.del(element.good_id)}>хочу удалить</Button>}
 
+          </div>
         </div>
       </div>
     )

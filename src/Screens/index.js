@@ -4,6 +4,7 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
 import MainScreen from './MainScreen/MainScreen'
 import ProductList from "./ProductListScreen/ProductList";
+import CartScreen from './CartScreen/CartScreen'
 
 class Screen extends React.Component {
   render() {
@@ -16,9 +17,9 @@ class Screen extends React.Component {
               <MainScreen />
             </Route>
             <Route path="/menu">
-              <UnderConstruct />
+              <ProductList />
             </Route>
-            <Route path="/shops">
+            <Route path="/busines">
               <ProductList />
             </Route>
             <Route path="/about">
@@ -26,6 +27,9 @@ class Screen extends React.Component {
             </Route>
             <Route path="/contact">
               <UnderConstruct />
+            </Route>
+            <Route path="/cart">
+              <CartScreen />
             </Route>
             <Route path="*">
               <UnderConstruct />

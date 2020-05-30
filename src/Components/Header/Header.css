@@ -34,8 +34,21 @@
 .toggle-menu{
   padding-top: 30px;
 }
-/*.navbar-collapse.show {
-}*/
+.navbar-collapse {
+  justify-content: space-between;
+}
+.menu{ 
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+}
+.header_center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (max-width: 1200px) {
   .header{ background-color: rgba(0, 0,0, 0.4);  padding: 30px!important;}
 }

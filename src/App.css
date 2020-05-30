@@ -27,9 +27,11 @@
   color: white;
 }
 .product_item {
+  height: 100vh;
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 .product_button_holder {
   margin-right: 40px;
@@ -39,6 +41,9 @@
   color: #61dafb;
 }
 @media (max-width: 500px) {
+  .product_item{
+    flex-direction: column;
+  }
   .product_item h3{
     margin-top: 0;
     font-size: 18px;
@@ -51,8 +56,7 @@
     font-size: 12px;
   }
   .product_item img{
-    width: 55px;
-    height: 55px;
+    width: 100%;
   }
   .product_item {
     margin: 10px 0;
@@ -66,7 +70,13 @@
     font-size: 10px;
   }
 }
-
+@media (max-width: 1200px) {
+  .header_center{
+    flex-direction: column!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
