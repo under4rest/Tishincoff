@@ -15,7 +15,8 @@ class Screen extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/">
-              <MainScreen />
+              {/* <MainScreen /> */}
+              <UnderConstruct />
             </Route>
             <Route path="/menu">
               <ProductList />

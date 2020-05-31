@@ -2,6 +2,10 @@
  font-family: "Gilroy-Bold";
  src: url("./fonts/Gilroy-Bold.ttf")
 }
+@font-face {
+ font-family: "Gilroy-Light";
+ src: url("./fonts/Gilroy-Light.ttf")
+}
 
 body {
   margin: 0;

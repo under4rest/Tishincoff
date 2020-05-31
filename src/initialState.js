@@ -43,7 +43,15 @@ const initState = {
       good_second_param: 'ROBUSTA 0%'
     },
   ],
-  cart: [],
+  cart: [{
+    good_id: 0,
+    good_name: "KENYA",
+    good_description: "Кенийскую арабику отличает высочайшее качество и стабильность вкуса, которое очень жестко контролирует «Департамент кофе». Кенийский кофе славится отчетливой индивидуальностью вкусового букета, фруктовыми, чаще цитрусовыми и ягодными оттенками, высокой кислотностью.",
+    good_param: "ARABICA 100%",
+    good_second_param: "ROBUSTA 0%",
+    good_count: 1,
+  }
+  ],
 }
 
 export default initState

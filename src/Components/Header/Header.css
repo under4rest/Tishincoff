@@ -42,6 +42,9 @@
   display: flex;
   flex: 1;
 }
+.cart_header{
+  height: 20px;
+}
 .header_center{
   display: flex;
   flex-direction: row;

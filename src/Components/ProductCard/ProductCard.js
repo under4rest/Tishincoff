@@ -1,5 +1,5 @@
 import React from 'react'
-import Cup from './../../Screens/UnderConstruct/img/black_pink.png';
+import Cup from './../../img/Product.png';
 import { Button } from 'react-bootstrap'
 
 
@@ -7,7 +7,6 @@ export default class ProductCard extends React.Component {
   state = {
     exist: false,
   };
-
   exist(element) {
     const { cart } = this.props
     cart.forEach(item => {
@@ -30,7 +29,6 @@ export default class ProductCard extends React.Component {
 
   render() {
     const { element, addToCart } = this.props
-
     return (
       <div className="product_item">
         <div className="product_img_holder">
@@ -44,9 +42,7 @@ export default class ProductCard extends React.Component {
             <p>{element.good_description}</p>
           </div>
           <div className="product_button_holder">
-
             {!this.state.exist ? <Button variant="light" className="product_button" onClick={() => addToCart(element)}>хочу добавить</Button> : <Button variant="light" className="product_button" onClick={() => this.del(element.good_id)}>хочу удалить</Button>}
-
           </div>
         </div>
       </div>

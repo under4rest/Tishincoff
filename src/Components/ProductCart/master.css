@@ -1,0 +1,44 @@
+.cart_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.cart_item p{
+  font-family: 'Gilroy-Light';
+}
+.cart_img {
+  height: 90px;
+  margin-right: 40px;
+}
+.cart_button{
+  margin-left: auto;
+  margin-right: 16px;
+}
+@media  (max-width: 500px) {
+  .cart_item {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  .cart_item p{
+    max-width: 370px;
+    font-size: 0.85em;
+    line-height: 1.2;
+  }
+  .cart_item h4{
+    font-size: 1.5em;
+  }
+  .cart_button {
+    margin-top: 20px;
+    width: 100%;
+    margin-right: auto;
+  }
+  .cart_img{
+    height: auto;
+    width: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
