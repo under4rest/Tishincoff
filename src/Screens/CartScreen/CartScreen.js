@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import actionAddToCart, { actionDelFromCart } from './../../Redux/actions/addToCart';
+
+function ScrollToTopOnMount() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
+
 class CartScreen extends React.Component {
   render() {
     const { cart } = this.props
     return (
       <div className="holder">
+        <ScrollToTopOnMount />
         <Container>
           <h1 className="under_construction">Корзина</h1>
           <h6 className="under_construction_h6">Это не просто переключатель кнопок, а хранилище состояние корзины которе можно достать из любого места</h6>
