@@ -10,15 +10,19 @@ class PorductCart extends React.Component {
     const { item, incCartGood, delFromCart, decCartGood } = this.props
     return (<>
       <div className="cart_item">
-        <img src={Cup} className="cart_img" alt="coffee type"/>
+        <img src={Cup} className="cart_img" alt="coffee type" />
         <div>
           <h4>TISHINKOFF SPECIALITY COFFEE ROASTERS: {item.good_name}</h4>
           <p>{item.good_param} | {item.good_second_param}</p>
         </div>
-        <Button variant="light" className="cart_button" onClick={() => item.good_count > 0 ? decCartGood(item.good_id) : null}> - </Button>
-          <p>{item.good_count}</p>
-        <Button variant="light" className="cart_button" onClick={() => incCartGood(item.good_id)}> + </Button>
-        <Button variant="light" className="cart_button" onClick={() => delFromCart(item.good_id)}>удалить</Button>
+        <div className="cart_button_holder">
+          <div className="cart_button_holder_inc_dec">
+            <Button variant="light" className="cart_button" onClick={() => item.good_count > 0 ? decCartGood(item.good_id) : null}> - </Button>
+            <p>{item.good_count}</p>
+            <Button variant="light" className="cart_button" onClick={() => incCartGood(item.good_id)}> + </Button>
+          </div>
+          <Button variant="light" className="cart_button" onClick={() => delFromCart(item.good_id)}>удалить</Button>
+        </div>
       </div>
     </>)
   }
