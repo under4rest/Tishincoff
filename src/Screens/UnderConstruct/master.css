@@ -1,5 +1,4 @@
 .holder {
-  padding-top: 160px;
   width: 100%;
   min-height: 180vh;
   display: flex;
@@ -37,7 +36,7 @@
 }
 .product_text p {
   max-width: 370px;
-  font-size: 0.85em;
+  font-size: 1em;
   line-height: 1.2;
   font-family: 'Gilroy-Light';
 }
@@ -61,6 +60,22 @@
 .product_button {
   min-width: 140px;
   margin-left: auto;
+}
+.price_holder{ 
+  margin-left: auto;
+  display: flex;
+}
+.cart_item .price_holder p{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Gilroy-Bold';
+  font-size: 1.2em;
+  min-width: 51px;
+}
+@media (max-width: 1200px) {
+  .cart_item h4{
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 1024px) {
   .under_construction {
@@ -89,5 +104,11 @@
   }
   .product_button{
     width: 100%;
+  }
+  .product_text p {
+    max-width: 370px;
+    font-size: 0.85em;
+    line-height: 1.2;
+    font-family: 'Gilroy-Light';
   }
 }

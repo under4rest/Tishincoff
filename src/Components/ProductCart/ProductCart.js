@@ -15,6 +15,9 @@ class PorductCart extends React.Component {
           <h4>TISHINKOFF SPECIALITY COFFEE ROASTERS: {item.good_name}</h4>
           <p>{item.good_param} | {item.good_second_param}</p>
         </div>
+        <div className="price_holder">
+          <p>{item.good_count * item.good_price} P</p>
+        </div>
         <div className="cart_button_holder">
           <div className="cart_button_holder_inc_dec">
             <Button variant="light" className="cart_button" onClick={() => item.good_count > 0 ? decCartGood(item.good_id) : null}> - </Button>
