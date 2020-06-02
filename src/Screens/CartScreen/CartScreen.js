@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import ProductCart from './../../Components/ProductCart/ProductCart'
 import actionAddToCart, { actionDelFromCart } from './../../Redux/actions/addToCart';
+import CartForm from '../../Components/CartForm/CartForm';
 
 function ScrollToTopOnMount() {
   useEffect(() => {
@@ -22,9 +23,14 @@ class CartScreen extends React.Component {
         <Container>
           <h1 className="under_construction">Корзина</h1>
           <h6 className="under_construction_h6">Это не просто переключатель кнопок, а хранилище состояние корзины которе можно достать из любого места</h6>
-          {cart.map((item, i) => {
+          {  cart.length > 0 ?
+          <div>
+           {cart.map((item, i) => {
             return <ProductCart item={item} key={i} />
-          })}
+            })}
+            <CartForm />
+          </div> :
+          <p>Пусто</p>}
         </Container>
       </div>
     )
