@@ -46,12 +46,9 @@
     font-size: 1.5em;
   }
   .cart_button_holder_inc_dec{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    flex: 1
   }
   .cart_button_holder {
-    flex-direction: column;
     margin-top: 20px;
     width: 100%;
     margin-right: auto;

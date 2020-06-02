@@ -20,7 +20,7 @@ class PorductCart extends React.Component {
         </div>
         <div className="cart_button_holder">
           <div className="cart_button_holder_inc_dec">
-            <Button variant="light" className="cart_button" onClick={() => item.good_count > 0 ? decCartGood(item.good_id) : null}> - </Button>
+            <Button variant="light" className="cart_button" onClick={() => item.good_count > 1 ? decCartGood(item.good_id) : delFromCart(item.good_id)}> - </Button>
             <p>{item.good_count}</p>
             <Button variant="light" className="cart_button" onClick={() => incCartGood(item.good_id)}> + </Button>
           </div>

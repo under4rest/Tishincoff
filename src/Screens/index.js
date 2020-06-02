@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "./../Components/Header/Header";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
-import MainScreen from './MainScreen/MainScreen'
+// import MainScreen from './MainScreen/MainScreen'
 import ProductList from "./ProductListScreen/ProductList";
 import CartScreen from './CartScreen/CartScreen'
 

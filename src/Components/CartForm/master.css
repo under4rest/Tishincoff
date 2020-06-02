@@ -39,6 +39,12 @@
 .delivery_item p{
   z-index: 1;
   font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.delivery_item p.delivery_description{
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 .delivery_item_active{
   position: absolute;
@@ -71,13 +77,14 @@ button.cart_form_submit p{
   }
   .delivery_item p{
     font-size: 1.5em;
-    padding-right: 30px;
-    padding-left: 30px;
+  }
+  .delivery_item p.delivery_description{
+    font-size: 0.85em;
   }
   .delivery_item_active{
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: -7px;
     height: 5px;
     width: 60px;
     background-color: red;

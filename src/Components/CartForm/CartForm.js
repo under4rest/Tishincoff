@@ -1,6 +1,6 @@
 import React from 'react'
 import './master.css'
-import { Button, Alert } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 
 export default class CartForm extends React.Component{
   state = {
@@ -24,9 +24,11 @@ export default class CartForm extends React.Component{
           <div className="delivery_item" onClick={()=> this.setState({delivery: 0})}>
             <p>САМОВЫВОЗ</p>
             {delivery === 0 ?<div className="delivery_item_active"/> : null}
+            <p className="delivery_description">ЗАБЕРУ В КОФЕЙНЕ</p>
           </div>
           <div className="delivery_item" onClick={()=> this.setState({delivery: 1})}>
-            <p>САМОВЫПИЛ</p>
+            <p>ДОСТАВКА</p>
+            <p className="delivery_description" />
             {delivery === 1 ?<div className="delivery_item_active"/> : null}
           </div>
         </div>

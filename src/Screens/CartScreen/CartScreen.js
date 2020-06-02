@@ -30,7 +30,7 @@ class CartScreen extends React.Component {
             })}
             <CartForm />
           </div> :
-          <p>Пусто</p>}
+          <p className="empty_cart">Пусто</p>}
         </Container>
       </div>
     )

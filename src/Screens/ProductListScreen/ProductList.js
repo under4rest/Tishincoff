@@ -22,8 +22,8 @@ class ProductList extends React.Component {
         <Container>
           <h1 className="under_construction">Товары</h1>
           <h6 className="under_construction_h6">Весь список товаров хранится на сервере и генерируется автоматически</h6>
-          {coffee.map((element, key) => {
-            return <ProductCard cart={cart} ket={key} element={element} addToCart={addToCart} delFromCart={delFromCart} />
+          {coffee.map((element, i) => {
+            return <ProductCard cart={cart} key={i} element={element} addToCart={addToCart} delFromCart={delFromCart} />
           })
           }
         </Container>
