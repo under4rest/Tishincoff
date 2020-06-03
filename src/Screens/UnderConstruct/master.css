@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   font-family:   'Gilroy-Bold';
+  padding-top: 120px;
 }
 .under_construction {
   font-size: 6em;
