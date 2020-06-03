@@ -27,9 +27,15 @@
   color: white;
 }
 .product_item {
-  height: 100vh;
+  height: 100%;
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slide {
+  height: calc(100vh);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -39,6 +45,13 @@
 }
 .App-link {
   color: #61dafb;
+}
+.product_slider{
+  overflow: hidden;
+  height: calc(100vh);
+}
+.menu_holder{
+  min-height: 100vh!important;
 }
 @media (max-width: 500px) {
   .product_item{

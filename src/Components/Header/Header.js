@@ -16,7 +16,7 @@ class Header extends React.Component {
     const { toggle } = this.state
     return (
       <>
-        <Navbar variant="dark" expand="xl" className={['header', toggle ? 'toggle' : null]} sticky="top">
+        <Navbar variant="dark" expand="xl" className={['header', toggle ? 'toggle' : null]} fixed="top">
           <Navbar.Brand><NavLink to="/"><img src={Logo} alt="ТИШИНКОФФ" className="logo" /></NavLink></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => this.toggle()} />
           <Navbar.Collapse id="basic-navbar-nav">
