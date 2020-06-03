@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.59999998.chunk.css",
-    "main.js": "/static/js/main.5c5e7f59.chunk.js",
-    "main.js.map": "/static/js/main.5c5e7f59.chunk.js.map",
+    "main.css": "/static/css/main.6bae807c.chunk.css",
+    "main.js": "/static/js/main.771b2d3c.chunk.js",
+    "main.js.map": "/static/js/main.771b2d3c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c4cd8ae5.js",
     "runtime-main.js.map": "/static/js/runtime-main.c4cd8ae5.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
     "static/js/2.5e1721df.chunk.js": "/static/js/2.5e1721df.chunk.js",
     "static/js/2.5e1721df.chunk.js.map": "/static/js/2.5e1721df.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.56ae44f770d4a5d8c6a0b3d830b5f2d4.js": "/precache-manifest.56ae44f770d4a5d8c6a0b3d830b5f2d4.js",
+    "precache-manifest.7d0c992449500634434ef50690028bbe.js": "/precache-manifest.7d0c992449500634434ef50690028bbe.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.59999998.chunk.css.map": "/static/css/main.59999998.chunk.css.map",
+    "static/css/main.6bae807c.chunk.css.map": "/static/css/main.6bae807c.chunk.css.map",
     "static/js/2.5e1721df.chunk.js.LICENSE.txt": "/static/js/2.5e1721df.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Gilroy-Light.4b236c6c.ttf",
     "static/media/Product.png": "/static/media/Product.c4434cdd.png",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.c4cd8ae5.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.5e1721df.chunk.js",
-    "static/css/main.59999998.chunk.css",
-    "static/js/main.5c5e7f59.chunk.js"
+    "static/css/main.6bae807c.chunk.css",
+    "static/js/main.771b2d3c.chunk.js"
   ]
 }

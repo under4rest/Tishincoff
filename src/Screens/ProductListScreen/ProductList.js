@@ -20,12 +20,14 @@ class ProductList extends React.Component {
   };
 
   wheel(e) {
-    const delta = e.deltaY || e.detail || e.wheelDelta
-    if (delta > 0) {
-      this.slider.slickPrev()
-    }
-    else {
-      this.slider.slickNext()
+    if (window.innerWidth > 1200) {
+      const delta = e.deltaY || e.detail || e.wheelDelta
+      if (delta > 0) {
+        this.slider.slickPrev()
+      }
+      else {
+        this.slider.slickNext()
+      }
     }
   }
 
@@ -37,7 +39,7 @@ class ProductList extends React.Component {
         <Container>
           {/* <h1 className="under_construction">Товары</h1>
           <h6 className="under_construction_h6">Весь список товаров хранится на сервере и генерируется автоматически</h6> */}
-          <Slider
+          {window.innerWidth > 1200 ? <Slider
             ref={slider => (this.slider = slider)}
             className="product_slider"
             speed={500}
@@ -53,7 +55,10 @@ class ProductList extends React.Component {
               return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
             })
             }
-          </Slider>
+          </Slider> : coffee.map((element, i) => {
+            return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+          })
+          }
         </Container>
       </div>
     )
