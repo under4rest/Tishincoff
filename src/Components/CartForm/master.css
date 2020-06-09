@@ -31,6 +31,13 @@
   font-family: 'Gilroy-Medium';
   width: 100%;
 }
+.absolute_bg.under{
+  background-image: none;
+  z-index: -1;
+}
+.holder.under{
+  padding-top: 120px;
+}
 .button_slider{
   position: absolute;
   top: 50vh;

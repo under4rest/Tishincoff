@@ -19,7 +19,8 @@ class UnderConstruct extends React.Component {
     return (
       <>
         <ScrollToTopOnMount />
-        <div className="holder">
+        <div className="absolute_bg under " />
+        <div className="holder under">
           <h6 className="under_construction_h6">Угадай новый рецепт</h6>
           <h1 className="under_construction">Готовим блокбастер</h1>
           <img src={Cup} alt='website logo' className="cup" />

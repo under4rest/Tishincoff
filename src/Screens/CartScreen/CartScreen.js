@@ -20,6 +20,7 @@ class CartScreen extends React.Component {
     return (
       <div className="holder cart_screen">
         <ScrollToTopOnMount />
+        <div className="absolute_bg under " />
         <Container>
           <h1 className="under_construction">Корзина</h1>
           <h6 className="under_construction_h6">Это не просто переключатель кнопок, а хранилище состояние корзины которе можно достать из любого места</h6>
