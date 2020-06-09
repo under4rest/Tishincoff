@@ -20,6 +20,7 @@
   justify-content: center;
   background-image: url(./Screens/ProductListScreen/BG.png);
   background-size: cover;
+  background-color: black;
   z-index: 0;
 }
 .absolute_bg img{
