@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import ProductCard from './../../Components/ProductCard/ProductCard'
 import Slider from "react-slick";
 import actionAddToCart, { actionDelFromCart } from './../../Redux/actions/addToCart'
-
+import BG from './BG.png'
 function ScrollToTopOnMount() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,6 +36,9 @@ class ProductList extends React.Component {
     return (
       <div className="holder menu_holder" onWheel={(e) => this.wheel(e)}>
         <ScrollToTopOnMount />
+        <div className="absolute_bg">
+          <img src={BG} alt="BG"/>
+        </div>
         <Container>
           {/* <h1 className="under_construction">Товары</h1>
           <h6 className="under_construction_h6">Весь список товаров хранится на сервере и генерируется автоматически</h6> */}

@@ -9,7 +9,46 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.absolute_bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./Screens/ProductListScreen/BG.png);
+  background-size: cover;
+}
+.absolute_bg img{
+  position: absolute;
+  top: -40%;
+  bottom: -40%;
+  left: -40%;
+  right: -40%;
+  width: 200vw;
+  height: 200vh!important;
+  opacity: 1;
+  animation: smokebg 1s infinite alternate;
+}
+@keyframes smokebg {
+  25% {
+    transform: skew(3deg, 2deg) rotate(0.01deg)
+  }
+  50% {
+    transform: skew(5deg, 2deg) rotate(0.01deg)
+  }
+  75% {
+    transform: skew(3deg, 5deg) rotate(0.01deg)
+  }
+  100% {
+    transform: skew(-5deg, -7deg) rotate(0.01deg)
+  }
+}
+.absolute_bg img{
+  height: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
