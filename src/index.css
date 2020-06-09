@@ -6,6 +6,22 @@
  font-family: "Gilroy-Light";
  src: url("./fonts/Gilroy-Light.ttf")
 }
+@font-face {
+ font-family: "Gilroy-Medium";
+ src: url("./fonts/Gilroy-Medium.ttf")
+}
+@font-face {
+ font-family: "Gilroy-Medium-Italic";
+ src: url("./fonts/Gilroy-MediumItalic.ttf")
+}
+@font-face {
+ font-family: "Gilroy-Semibold";
+ src: url("./fonts/Gilroy-SemiBold.ttf")
+}
+@font-face {
+ font-family: "Gilroy-Semibold-Ttalic";
+ src: url("./fonts/Gilroy-SemiBoldItalic.ttf")
+}
 
 body {
   margin: 0;

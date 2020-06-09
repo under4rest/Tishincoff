@@ -18,7 +18,7 @@ class CartScreen extends React.Component {
   render() {
     const { cart } = this.props
     return (
-      <div className="holder">
+      <div className="holder cart_screen">
         <ScrollToTopOnMount />
         <Container>
           <h1 className="under_construction">Корзина</h1>

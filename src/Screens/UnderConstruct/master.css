@@ -6,7 +6,6 @@
   align-items: center;
   flex-direction: column;
   font-family:   'Gilroy-Bold';
-  padding-top: 120px;
 }
 .under_construction {
   font-size: 6em;
@@ -39,7 +38,7 @@
   max-width: 370px;
   font-size: 1em;
   line-height: 1.2;
-  font-family: 'Gilroy-Light';
+  font-family: 'Gilroy-Medium';
 }
 .product_img{
   flex: 1;
@@ -110,6 +109,6 @@
     max-width: 370px;
     font-size: 0.85em;
     line-height: 1.2;
-    font-family: 'Gilroy-Light';
+    font-family: 'Gilroy-Medium';
   }
 }

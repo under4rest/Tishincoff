@@ -45,11 +45,24 @@ class ProductList extends React.Component {
             speed={500}
             slidesToShow={1}
             slidesToScroll={1}
-            dots={false}
+            dots
             arrows={false}
-            draggable
             vertical
-            verticalSwiping
+            dotsClass='button_slider'
+            // appendDots={ dots => (
+            //   <div
+            //     className="dotContainer"
+            //     style={{
+            //       position: 'absolute',
+            //       top: '50vh',
+            //       // backgroundColor: "#ddd",
+            //       borderRadius: "10px",
+            //       padding: "10px"
+            //     }}
+            //   >
+            //     <ul style={{ margin: "0px" }}> {dots} </ul>
+            //   </div>
+            // )}
           >
             {coffee.map((element, i) => {
               return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
