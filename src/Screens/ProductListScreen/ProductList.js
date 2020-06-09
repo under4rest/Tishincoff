@@ -39,7 +39,7 @@ class ProductList extends React.Component {
         <div className="absolute_bg">
           <img src={BG} alt="BG"/>
         </div>
-        <Container>
+        <Container style={{zIndex: 1}}>
           {/* <h1 className="under_construction">Товары</h1>
           <h6 className="under_construction_h6">Весь список товаров хранится на сервере и генерируется автоматически</h6> */}
           {window.innerWidth > 1200 ? <Slider
