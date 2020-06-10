@@ -29,6 +29,8 @@ export default class ProductCard extends React.Component {
 
   render() {
     const { element, addToCart } = this.props
+    console.warn(element);
+    
     return (
       <div className="product_item">
         <div className="product_img_holder">

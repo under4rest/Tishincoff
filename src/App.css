@@ -30,7 +30,7 @@
   left: -40%;
   right: -40%;
   width: 200vw;
-  height: 200vh!important;
+  height: 250vh!important;
   opacity: 1;
   animation: smokebg 10s infinite alternate;
 }
@@ -47,9 +47,6 @@
   100% {
     transform: skew(2deg, 20deg) rotate(5deg)
   }
-}
-.absolute_bg img{
-  height: 100%;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -96,6 +93,12 @@
   min-height: 100vh!important;
 }
 @media (max-width: 500px) {
+  .product_text h3 {
+    font-size: 4.5em!important;
+  }
+  .menu_holder .container{
+    padding-top: 120px;
+  }
   .product_item{
     flex-direction: column;
   }

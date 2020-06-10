@@ -16,13 +16,14 @@ function ScrollToTopOnMount() {
 class ProductList extends React.Component {
   state = {
     slideIndex: 0,
-    updateCount: 0
+    updateCount: 0,
+    category: 0,
   };
 
   wheel(e) {
     if (window.innerWidth > 1200) {
       const delta = e.deltaY || e.detail || e.wheelDelta
-      if (delta > 0) {
+      if (delta < 0) {
         this.slider.slickPrev()
       }
       else {
@@ -30,18 +31,22 @@ class ProductList extends React.Component {
       }
     }
   }
-
+  setCategory(id) {
+    this.setState({ category: id });
+    this.slider.slickGoTo(0)
+    console.warn(this.state.category);
+  }
   render() {
-    const { coffee, cart, addToCart, delFromCart } = this.props
+    const { products, cart, addToCart, delFromCart } = this.props
+    const { category } = this.state
+
     return (
       <div className="holder menu_holder" onWheel={(e) => this.wheel(e)}>
         <ScrollToTopOnMount />
         <div className="absolute_bg">
-          <img src={BG} alt="BG"/>
+          <img src={BG} alt="BG" />
         </div>
-        <Container style={{zIndex: 1}}>
-          {/* <h1 className="under_construction">Товары</h1>
-          <h6 className="under_construction_h6">Весь список товаров хранится на сервере и генерируется автоматически</h6> */}
+        <Container style={{ zIndex: 1 }}>
           {window.innerWidth > 1200 ? <Slider
             ref={slider => (this.slider = slider)}
             className="product_slider"
@@ -52,37 +57,32 @@ class ProductList extends React.Component {
             arrows={false}
             vertical
             dotsClass='button_slider'
-            // appendDots={ dots => (
-            //   <div
-            //     className="dotContainer"
-            //     style={{
-            //       position: 'absolute',
-            //       top: '50vh',
-            //       // backgroundColor: "#ddd",
-            //       borderRadius: "10px",
-            //       padding: "10px"
-            //     }}
-            //   >
-            //     <ul style={{ margin: "0px" }}> {dots} </ul>
-            //   </div>
-            // )}
           >
-            {coffee.map((element, i) => {
+            {products[category].list.map((element, i) => {
               return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
             })
             }
-          </Slider> : coffee.map((element, i) => {
-            return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+          </Slider> : products.map((element, i) => {
+            return element.list.map((element, i) => {
+              return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+            }
+            )
           })
           }
         </Container>
+        {window.innerWidth > 1200 ? <div className="category_container">
+          {products.map((item, index) => {
+            return <p onClick={() => this.setCategory(index)} key={item.category_id}>{item.category_name}</p>
+          })
+          }
+        </div> : null}
       </div>
     )
   }
 }
 const mapStateToPorps = (state) => {
   return {
-    coffee: state.coffee,
+    products: state.products,
     cart: state.cart,
   }
 };

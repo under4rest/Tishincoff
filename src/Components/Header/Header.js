@@ -31,7 +31,7 @@ class Header extends React.Component {
                 <Nav><NavLink to="about" activeClassName="selected" className="menu_item" onClick={() =>{this.settoggle()}}> О нас </NavLink></Nav>
                 <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> Контакты </NavLink></Nav>
               </div>
-              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" > <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
+              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

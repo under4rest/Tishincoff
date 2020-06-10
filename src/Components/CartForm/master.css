@@ -38,6 +38,15 @@
 .holder.under{
   padding-top: 120px;
 }
+.category_container{
+  z-index: 10;
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+}
+.category_container p {
+  margin-right: 10px;
+}
 .button_slider{
   position: absolute;
   top: 50vh;
