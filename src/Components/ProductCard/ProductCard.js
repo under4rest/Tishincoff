@@ -5,13 +5,15 @@ import { Button } from 'react-bootstrap'
 
 export default class ProductCard extends React.Component {
   state = {
-    exist: false,
+    upd: 0
   };
   exist(element) {
     const { cart } = this.props
+    let a = false
     cart.forEach(item => {
-      if (item.good_id === element.good_id) { this.setState({ exist: true }) }
+      if (item.good_id === element.good_id) { a = true }
     })
+    return a
   }
   del(id) {
     const { delFromCart } = this.props
@@ -22,15 +24,13 @@ export default class ProductCard extends React.Component {
     this.exist(this.props.element)
   }
   componentDidUpdate(prevProps) {
-    if (prevProps.cart !== this.props.cart) {
+    if (prevProps.cart !== this.props.cart || prevProps.element.category_id !== this.props.element.category_id) {
       this.exist(this.props.element)
     }
   }
 
   render() {
     const { element, addToCart } = this.props
-    console.warn(element);
-    
     return (
       <div className="product_item">
         <div className="product_img_holder">
@@ -44,7 +44,7 @@ export default class ProductCard extends React.Component {
             <p>{element.good_description}</p>
           </div>
           <div className="product_button_holder">
-            {!this.state.exist ? <Button variant="light" className="product_button" onClick={() => addToCart(element)}>хочу добавить</Button> : <Button variant="light" className="product_button" onClick={() => this.del(element.good_id)}>хочу удалить</Button>}
+            {!this.exist(element) ? <Button variant="light" className="product_button" onClick={() => { console.log({ element }); addToCart(element) }}>хочу добавить</Button> : <Button variant="light" className="product_button" onClick={() => this.del(element.good_id)}>хочу удалить</Button>}
           </div>
         </div>
       </div>

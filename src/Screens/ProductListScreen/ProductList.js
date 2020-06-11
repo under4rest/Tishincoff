@@ -34,7 +34,6 @@ class ProductList extends React.Component {
   setCategory(id) {
     this.setState({ category: id });
     this.slider.slickGoTo(0)
-    console.warn(this.state.category);
   }
   render() {
     const { products, cart, addToCart, delFromCart } = this.props
@@ -59,12 +58,12 @@ class ProductList extends React.Component {
             dotsClass='button_slider'
           >
             {products[category].list.map((element, i) => {
-              return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+              return <div key={i}><ProductCard cart={cart} key={category} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
             })
             }
-          </Slider> : products.map((element, i) => {
+          </Slider> : products.map((element, index) => {
             return element.list.map((element, i) => {
-              return <div key={i}><ProductCard cart={cart} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+              return <div key={i}><ProductCard cart={cart} key={category} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
             }
             )
           })
