@@ -1,5 +1,4 @@
 .header {
-  background-color: rgba(0,0,0,0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,6 +7,10 @@
   padding-top: 60px!important;
   font-family:   'Gilroy-Bold';
   padding-bottom: 20px!important;
+}
+.header_bg{
+  background-color: rgba(0,0,0,0.8);
+  padding-bottom: 0!important;
 }
 .logo{
   margin-left: 45px;
@@ -59,7 +62,7 @@
 }
 
 @media (max-width: 1200px) {
-  .header{ background-color: rgba(0, 0,0, 0.4);  padding: 30px!important;}
+  .header{ background-color: rgba(0, 0,0, 0.7);  padding: 30px!important;}
 }
 @media (max-width: 768px) {
   .header .menu .menu_item{

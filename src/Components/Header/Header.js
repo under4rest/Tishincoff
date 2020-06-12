@@ -17,11 +17,12 @@ class Header extends React.Component {
     this.setState({ toggle: false });
   }
   render() {
+    const { bg, fixed } = this.props;
     const { toggle } = this.state
     return (
       <>
-        <Navbar variant="dark" expanded={toggle} expand="xl" className={['header', toggle ? 'toggle' : null]} fixed="top">
-          <Navbar.Brand><NavLink to="/"><img src={Logo} alt="ТИШИНКОФФ" className="logo" /></NavLink></Navbar.Brand>
+        <Navbar variant="dark" expanded={toggle} expand="xl" className={['header', toggle ? 'toggle' : null, fixed ? 'fixed-top' : null, bg ? 'header_bg' : null]} >
+          <Navbar.Brand><NavLink to="/" onClick={() => { this.settoggle() }} ><img src={Logo} alt="ТИШИНКОФФ" className="logo" /></NavLink></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => this.toggle()} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={['menu', toggle ? 'toggle-menu' : null]}>

@@ -274,6 +274,7 @@ const initState = {
       good_param: 'ARABICA 100%',
       good_second_param: 'ROBUSTA 0%',
       good_price: 100,
+      good_count: 1,
       good_weight: 1000,
     }
   ],

@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .cart_screen {
-  padding-top: 250px;
+  padding-top: 100px;
 }
 .cart_form_input{
   flex: 1;
@@ -36,7 +36,7 @@
   z-index: -1;
 }
 .holder.under{
-  padding-top: 120px;
+  padding-top: 75px;
 }
 .category_container{
   z-index: 10;

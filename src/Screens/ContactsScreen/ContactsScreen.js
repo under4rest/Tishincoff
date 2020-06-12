@@ -51,13 +51,13 @@ export default class ConstactsScreen extends React.Component {
             <h3 className="contact_text_address">Адрес</h3>
             <p className="contact_text_address_p">Управление по приволжскому федеральному округу 428000,<br />  Чувашская Республика, г. Чебоксары, ул. Гагарина, д. 55, офис 307</p>
           </Container>
-          <img src={map} className="contact_img_map" />
+          <img src={map} className="contact_img_map" alt="map" />
           <Container>
             <p className="contact_text_address_p contact_description">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «КИРА»<br />Полное наименование: ООО «КИРА»<br />ИНН/КПП: 2130159370/213001001<br />ОГРН: 1152130011010<br />Юридический адрес: 428000, Чувашская Республика, г. Чебоксары, ул. Текстильщиков, д. 13 «А»<br />р/с № 40702810616100031005<br />банк : ПАО АКБ «АВАНГАРД»<br />к/с 30101810000000000201<br />БИК 044525201<br />г. Москва, Садовническая ул., д.12, стр.1 Директор, Тишин Сергей Владимирович действующий на основании Устава<br />Тел: +7(927)99-54-999<br />e-mail:290401@list.ru</p>
             <div className="contact_brand_logo_holder">
-              <img src={vk} className="contact_brand_logo" />
-              <img src={wa} className="contact_brand_logo" />
-              <img src={insta} className="contact_brand_logo" />
+              <img src={vk} className="contact_brand_logo" alt="vk" />
+              <img src={wa} className="contact_brand_logo" alt="wa" />
+              <img src={insta} className="contact_brand_logo" alt="insta" />
             </div>
           </Container>
         </div>
