@@ -5,6 +5,7 @@ import UnderConstruct from "./UnderConstruct/UnderConstruct";
 // import MainScreen from './MainScreen/MainScreen'
 import ProductList from "./ProductListScreen/ProductList";
 import CartScreen from './CartScreen/CartScreen'
+import ContactsScreen from './ContactsScreen/ContactsScreen'
 
 
 class Screen extends React.Component {
@@ -28,7 +29,7 @@ class Screen extends React.Component {
               <UnderConstruct />
             </Route>
             <Route path="/contact">
-              <UnderConstruct />
+              <ContactsScreen />
             </Route>
             <Route path="/cart">
               <CartScreen />

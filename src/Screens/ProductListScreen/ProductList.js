@@ -71,10 +71,12 @@ class ProductList extends React.Component {
         </Container>
         {window.innerWidth > 1200 ? <div className="category_container">
           {products.map((item, index) => {
-            return <p onClick={() => this.setCategory(index)} key={item.category_id}>{item.category_name}</p>
+            return <p onClick={() => this.setCategory(index)} className={'categoryItem', category === item.category_id ? ' active' : null
+            } key={item.category_id} > {item.category_name}</p>
           })
           }
-        </div> : null}
+        </div> : null
+        }
       </div>
     )
   }

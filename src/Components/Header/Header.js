@@ -26,14 +26,15 @@ class Header extends React.Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={['menu', toggle ? 'toggle-menu' : null]}>
               <div className="header_center">
-                <Nav><NavLink to="menu" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> Меню </NavLink></Nav>
-                <Nav><NavLink to="busines" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> Бизнес </NavLink></Nav>
-                <Nav><NavLink to="about" activeClassName="selected" className="menu_item" onClick={() =>{this.settoggle()}}> О нас </NavLink></Nav>
-                <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> Контакты </NavLink></Nav>
+                <Nav><NavLink to="menu" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> Меню </NavLink></Nav>
+                <Nav><NavLink to="busines" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> Бизнес </NavLink></Nav>
+                <Nav><NavLink to="about" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> О нас </NavLink></Nav>
+                <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> Контакты </NavLink></Nav>
               </div>
-              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => {this.settoggle()}}> <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
+              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
             </Nav>
           </Navbar.Collapse>
+          {/* <p>{window.innerWidth}</p> */}
         </Navbar>
       </>
     )

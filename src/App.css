@@ -23,6 +23,17 @@
   background-color: black;
   z-index: 0;
 }
+.category_container p{ 
+  font-family: "San-Bold";
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin: 0 15px;
+}
+.category_container p.active{
+  color: rgba(255,255,255,1);
+}
 .absolute_bg img{
   position: absolute;
   top: -40%;
@@ -33,6 +44,17 @@
   height: 250vh!important;
   opacity: 1;
   animation: smokebg 10s infinite alternate;
+}
+.invert{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 200vw;
+  height: 250vh!important; */
+  filter: invert(100%);
+  z-index: 9000;
 }
 @keyframes smokebg {
   25% {
