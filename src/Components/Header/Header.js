@@ -1,9 +1,13 @@
 import React from "react";
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { themeSwitch } from '../../Redux/actions/addToCart'
 import Logo from './Logo.png';
 import cart from './../../img/cart.png'
+import moon from './../../img/Moon.svg'
+
 
 class Header extends React.Component {
   state = {
@@ -15,6 +19,10 @@ class Header extends React.Component {
   }
   settoggle() {
     this.setState({ toggle: false });
+  }
+  themeToggle() {
+    const { theme, themeSwitch } = this.props
+    themeSwitch(!theme);
   }
   render() {
     const { bg, fixed } = this.props;
@@ -32,6 +40,7 @@ class Header extends React.Component {
                 <Nav><NavLink to="about" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> О нас </NavLink></Nav>
                 <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> Контакты </NavLink></Nav>
               </div>
+              <img src={moon} className="brand_logo" onClick={() => this.themeToggle()} />
               <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
             </Nav>
           </Navbar.Collapse>
@@ -41,5 +50,16 @@ class Header extends React.Component {
     )
   };
 }
+const mapStateToPorps = (state) => {
+  return {
+    theme: state.theme,
+  }
+};
 
-export default Header
+const mapDispatchToProps = (dispatch) => {
+  return {
+    themeSwitch: (e) => dispatch(themeSwitch(e)),
+  }
+}
+
+export default connect(mapStateToPorps, mapDispatchToProps)(Header)

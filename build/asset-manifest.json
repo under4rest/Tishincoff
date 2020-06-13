@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.79c4d6d2.chunk.css",
-    "main.js": "/static/js/main.4787b36c.chunk.js",
-    "main.js.map": "/static/js/main.4787b36c.chunk.js.map",
+    "main.css": "/static/css/main.1f6937a1.chunk.css",
+    "main.js": "/static/js/main.30983798.chunk.js",
+    "main.js.map": "/static/js/main.30983798.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c4cd8ae5.js",
     "runtime-main.js.map": "/static/js/runtime-main.c4cd8ae5.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.51285cbd.chunk.js": "/static/js/2.51285cbd.chunk.js",
-    "static/js/2.51285cbd.chunk.js.map": "/static/js/2.51285cbd.chunk.js.map",
+    "static/js/2.79226f81.chunk.js": "/static/js/2.79226f81.chunk.js",
+    "static/js/2.79226f81.chunk.js.map": "/static/js/2.79226f81.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7dc2c3fb715c792fd0fc809aa2148c00.js": "/precache-manifest.7dc2c3fb715c792fd0fc809aa2148c00.js",
+    "precache-manifest.3e5547d44e36602b407e29073fa58e44.js": "/precache-manifest.3e5547d44e36602b407e29073fa58e44.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.79c4d6d2.chunk.css.map": "/static/css/main.79c4d6d2.chunk.css.map",
-    "static/js/2.51285cbd.chunk.js.LICENSE.txt": "/static/js/2.51285cbd.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/BG.0dd6b87e.png",
+    "static/css/main.1f6937a1.chunk.css.map": "/static/css/main.1f6937a1.chunk.css.map",
+    "static/js/2.79226f81.chunk.js.LICENSE.txt": "/static/js/2.79226f81.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/BG.a4c298c9.png",
+    "static/media/ColorGradient.png": "/static/media/ColorGradient.4b4b982c.png",
     "static/media/index.css": "/static/media/SFUIDisplay-Bold.8757032d.ttf",
     "static/media/Map.png": "/static/media/Map.0001c7e0.png",
+    "static/media/Moon.svg": "/static/media/Moon.5b18907e.svg",
     "static/media/Product.png": "/static/media/Product.c4434cdd.png",
     "static/media/black_pink.png": "/static/media/black_pink.766b05d5.png",
     "static/media/instagram.svg": "/static/media/instagram.77cc375b.svg",
@@ -26,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.c4cd8ae5.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.51285cbd.chunk.js",
-    "static/css/main.79c4d6d2.chunk.css",
-    "static/js/main.4787b36c.chunk.js"
+    "static/js/2.79226f81.chunk.js",
+    "static/css/main.1f6937a1.chunk.css",
+    "static/js/main.30983798.chunk.js"
   ]
 }

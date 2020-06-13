@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./../Components/Header/Header";
+import { connect } from 'react-redux'
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import UnderConstruct from "./UnderConstruct/UnderConstruct";
 import MainScreen from './MainScreen/MainScreen'
@@ -11,9 +12,10 @@ import AboutScreen from './AboutScreen/AboutScreen'
 
 class Screen extends React.Component {
   render() {
+    const { theme } = this.props
     return (
       <Router>
-        <div className="overalContainer">
+        <div className={["overalContainer ", theme ? " invert" : null]}>
           <Switch>
             <Route exact path="/">
               <Header bg={false} fixed={true} />
@@ -46,9 +48,14 @@ class Screen extends React.Component {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </Router >
     );
   }
 }
+const mapStateToPorps = (state) => {
+  return {
+    theme: state.theme,
+  }
+};
 
-export default Screen;
+export default connect(mapStateToPorps)(Screen);

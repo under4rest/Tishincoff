@@ -13,6 +13,7 @@ const ACTION_ADD_TO_CART = 'ACTION_ADD_TO_CART'
 const ACTION_DEL_FROM_CART = 'ACTION_DEL_FROM_CART'
 const ACTION_INC_CART_GOOD = 'ACTION_INC_CART_GOOD'
 const ACTION_DEC_CART_GOOD = 'ACTION_DEC_CART_GOOD'
+const THEME_SWITCH = 'THEME_SWITCH'
 
 const rootReducer = (state = initState, action) => {
   switch (action.type) {
@@ -42,6 +43,8 @@ const rootReducer = (state = initState, action) => {
           }
         })
       }
+    case THEME_SWITCH:
+      return { ...state, theme: action.payload }
   }
   return state
 }

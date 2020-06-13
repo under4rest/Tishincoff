@@ -56,6 +56,23 @@
   filter: invert(100%);
   z-index: 9000;
 }
+.invert img{
+  filter: invert(100%);
+}
+.invert .menu_item img,
+.invert .logo,
+.invert .contact_brand_logo,
+.invert .brand_logo{
+  filter: invert(0%);
+}
+.invert .absolute_bg img{
+  display: none;
+}
+.invert .absolute_bg{
+  background-image: none;
+  background-color: black;
+}
+
 @keyframes smokebg {
   25% {
     transform: skew(10deg, 10deg) rotate(0deg)

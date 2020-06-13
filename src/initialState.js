@@ -278,6 +278,7 @@ const initState = {
       good_weight: 1000,
     }
   ],
+  theme: false,
 }
 
 export default initState
