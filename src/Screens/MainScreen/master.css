@@ -48,12 +48,13 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  top: -190px;
+  top: -150px;
   left: 150px;
 }
 .brand_logo{
   margin: auto 10px;
   height: 36px;
+  width: 36px;
 }
 .brand_logo.vk{
   margin-left: 35px;
@@ -69,6 +70,15 @@
   text-transform: uppercase;
 }
 @media (max-width: 1024px) {
+  .brand_logo.vk{
+    margin-left: 0;
+  }
+  .invert .column-left h1,
+  .invert .column-left p{
+    filter: invert(100%);
+    color: white;
+    text-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+  }
   .main-text {
     font-size: 62px;
     line-height: 80px;

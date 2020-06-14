@@ -75,6 +75,13 @@
   }
 }
 @media (max-width: 500px) {
+  .about_main_holder{
+    padding: 0 15px;
+  }
+  .about_h1_description{
+    text-align: left;
+    padding-bottom: 80px;
+  }
   .container .about_h1{
     font-size: 48px;
   }
