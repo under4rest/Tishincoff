@@ -51,6 +51,7 @@
   flex: 1;
 }
 .cart_header{
+  margin-top: 10px;
   height: 28px;
   width: 36px;
 }
