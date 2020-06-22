@@ -1,6 +1,6 @@
 .holder-main{
   min-height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -12,6 +12,25 @@
   display: flex;
   justify-content: space-between;
   padding: 50px;
+}
+.invert .sum,
+.invert .delivery_item_active{
+  filter: invert(100%);
+} 
+.sum{
+  position: relative;
+  top: -36px;
+  right: -26px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 10px;
 }
 .column-left{
   flex-direction: column;
@@ -42,6 +61,7 @@
   margin: auto;
 }
 .cup_main{
+  max-height: 900px;
   height: 100%;
 }
 .butn_holder{
@@ -69,6 +89,12 @@
   box-shadow: 0 0 120px #0B39ff;
   text-transform: uppercase;
 }
+@media (max-width: 1400px) {
+  .main-text {
+    font-size: 60px;
+    line-height: 86px;
+  }
+}
 @media (max-width: 1024px) {
   .brand_logo.vk{
     margin-left: 0;
@@ -94,7 +120,6 @@
     align-items: center;
     justify-content: center;
   min-height: 100%;
-  position: static;
   background-color: black;
   padding-top: 90px;
 } 

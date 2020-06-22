@@ -14,6 +14,16 @@ class Header extends React.Component {
     toggle: false,
     navExpanded: false,
   }
+
+  count() {
+    const { cart } = this.props
+    let cunt = 0
+    cart.forEach(item => {
+      cunt += item.good_count
+    });
+    return cunt
+  }
+
   toggle() {
     this.setState({ toggle: !this.state.toggle })
   }
@@ -41,7 +51,10 @@ class Header extends React.Component {
                 <Nav><NavLink to="contact" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> Контакты </NavLink></Nav>
               </div>
               <img src={moon} className="brand_logo" onClick={() => this.themeToggle()} />
-              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}> <img src={cart} className='cart_header' alt="корзина" /> </NavLink></Nav>
+              <Nav><NavLink to="cart" activeClassName="selected" className="menu_item" onClick={() => { this.settoggle() }}>
+                <img src={cart} className='cart_header' alt="корзина" />
+                <div className="sum">{this.count()}</div>
+                </NavLink></Nav>
             </Nav>
           </Navbar.Collapse>
           {/* <p>{window.innerWidth}</p> */}
@@ -53,6 +66,7 @@ class Header extends React.Component {
 const mapStateToPorps = (state) => {
   return {
     theme: state.theme,
+    cart: state.cart,
   }
 };
 
