@@ -65,7 +65,8 @@
 .invert .menu_item img,
 .invert .logo,
 .invert .contact_brand_logo,
-.invert .brand_logo{
+.invert .brand_logo,
+.invert .cart_img{
   filter: invert(0%);
 }
 .invert .absolute_bg img{
