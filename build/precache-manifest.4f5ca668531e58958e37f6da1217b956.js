@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2db637b16a631c83ceeb6d3ce132533",
+    "revision": "3d3d7fda88fafc331e7286d494502e3b",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "bb2f64bcd1cd596c1002",
-    "url": "/static/css/main.ebbfa67a.chunk.css"
+    "revision": "82ae76fa72bbaf127409",
+    "url": "/static/css/main.fd0d217d.chunk.css"
   },
   {
     "revision": "613577a9f97f43c6374f",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.8ca755c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb2f64bcd1cd596c1002",
-    "url": "/static/js/main.e09449a8.chunk.js"
+    "revision": "82ae76fa72bbaf127409",
+    "url": "/static/js/main.4fa2682d.chunk.js"
   },
   {
     "revision": "248f1bc4cd8449ef01ae",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Map.0001c7e0.png"
   },
   {
-    "revision": "5b18907e928ad25817ff1d0ebf807420",
-    "url": "/static/media/Moon.5b18907e.svg"
+    "revision": "a494b56aaa9e87ee70a87784b75196be",
+    "url": "/static/media/Moon.a494b56a.svg"
   },
   {
     "revision": "c4434cdd6b6b6e1680f322a4448acf79",
@@ -84,15 +84,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/black_pink.766b05d5.png"
   },
   {
-    "revision": "77cc375b3401962145169f98c86e9f04",
-    "url": "/static/media/instagram.77cc375b.svg"
+    "revision": "8cf0d4d66c9eec852e95a6f80e284b3a",
+    "url": "/static/media/instagram.8cf0d4d6.svg"
   },
   {
-    "revision": "82a71a5c99f90c46ea887a83f0f23b94",
-    "url": "/static/media/vk.82a71a5c.svg"
+    "revision": "f81dd48ab96309326a12058df87613fa",
+    "url": "/static/media/vk.f81dd48a.svg"
   },
   {
-    "revision": "994c1c4d999a4e1416018e4fc91dfa01",
-    "url": "/static/media/whatsapp.994c1c4d.svg"
+    "revision": "cb95f76974df36bf2c51162f35433a43",
+    "url": "/static/media/whatsapp.cb95f769.svg"
   }
 ]);

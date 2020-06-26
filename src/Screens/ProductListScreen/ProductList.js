@@ -53,6 +53,8 @@ class ProductList extends React.Component {
             slidesToShow={1}
             slidesToScroll={1}
             dots
+            swipe={false}
+            draggable={false}
             arrows={false}
             vertical
             dotsClass='button_slider'
@@ -63,7 +65,7 @@ class ProductList extends React.Component {
             }
           </Slider> : products.map((element, index) => {
             return element.list.map((element, i) => {
-              return <div key={i}><ProductCard cart={cart} key={category} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
+              return <div key={i} style={{outline: 'none'}}><ProductCard cart={cart} key={category} element={element} addToCart={addToCart} delFromCart={delFromCart} /></div>
             }
             )
           })
