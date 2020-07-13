@@ -1,6 +1,6 @@
 import React from "react";
 import './master.css'
-import BG from './ColorGradient.png';
+// import BG from './ColorGradient.png';
 import cup from '../UnderConstruct/img/black_pink.png'
 import vk from '../../img/vk.svg'
 import insta from '../../img/instagram.svg'

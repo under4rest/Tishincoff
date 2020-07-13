@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
-import Screen from './Screens/index.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
+const Screen = lazy(() => import('./Screens/index.js'))
+
+function Preloader() {
+  return (
+    <div style={{backgoundColor: "black"}}/>
+  )
+}
 
 
 function App(props) {
   return (<>
+    <Suspense fallback={<Preloader />}>
+      <Screen className="overalContainer" data={props.state} />
+      <Preloader />
+    </Suspense>
     {/* <div className="invert"> */}
-    <Screen className="overalContainer" data={props.state} />
     {/* </div> */}
   </>
   );
